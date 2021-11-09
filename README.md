@@ -9,7 +9,7 @@
 - [x] Create local files for preview
 - [x] Publish to Github for collaboration
 - [x] Create backend structure to host on Google Cloud App Engine
-- [ ] Deploy an instance to App Engine on Google Cloud --> Jalen
+- [x] Deploy an instance to App Engine on Google Cloud --> Jalen
 - [ ] Create the modals for more information on TV Show
 - [ ] Create styling and padding against images that are loaded
 - [ ] Write out the documentation for using the app
