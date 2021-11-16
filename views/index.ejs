@@ -1,0 +1,32 @@
+<%- include("partials/header")%>
+<!-- Renders the Header file for pages-->
+
+<body>
+    <h1>TV Show Search</h1>
+    <form id="searchForm">
+        <input type="text" placeholder="TV Show Title" id='searchTerm' name="query">
+        <button>Search</button>
+    </form>
+    <br>
+</body>
+
+<script>
+    // TV Search Form Function
+    $(document).ready(function () {
+        $('#searchForm').submit(async function (e) {
+            e.preventDefault();
+            const searchTerm = $('#searchTerm').val();
+            const config = {
+                params: {
+                    q: searchTerm
+                }
+            }
+            const res = await axios.get(`https://api.tvmaze.com/search/shows?`, config);
+            makeImages(res.data);
+            $('#searchTerm').val('');
+        })
+    });
+</script>
+
+<%- include("partials/footer")%>
+<!-- Renders the footer page for the files-->
