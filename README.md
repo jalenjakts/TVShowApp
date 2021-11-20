@@ -10,9 +10,9 @@
 - [x] Publish to Github for collaboration
 - [x] Create backend structure to host on Google Cloud App Engine
 - [x] Deploy an instance to App Engine on Google Cloud --> Jalen
-- [ ] Create the modals for more information on TV Show
-- [ ] Create styling and padding against images that are loaded
-- [ ] Write out the documentation for using the app
+- [x] Create the modals for more information on TV Show
+- [x] Create styling and padding against images that are loaded
+- [x] Write out the documentation for using the app
 
 ### Dependencies (Use command 'npm install package_name -- save)
 - Express
